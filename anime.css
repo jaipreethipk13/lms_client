@@ -1,0 +1,73 @@
+/* Remove spacing */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    flex-direction: column;
+    animation: fadeInPage 1.2s ease-in-out forwards ,typing 4s steps(40, end) forwards,
+               blink 0.7s step-end infinite;
+}
+
+/* Wrapper for video + text */
+.center-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video styling with slow zoom-in */
+.vi-bg {
+    width: 55vh;
+    height: 55vh;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    
+    opacity: 0;
+    animation: 
+        fadeIn 1.4s ease-in-out forwards,
+        slowZoom 12s ease-in-out infinite alternate;
+}
+
+/* Text under video */
+.cont {
+    margin-top: 12px;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
+
+/* Fade In Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInPage {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Slow smooth zoom-in/out */
+@keyframes slowZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.08); /* subtle cinematic zoom */
+    }
+}
