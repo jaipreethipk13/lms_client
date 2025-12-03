@@ -1,0 +1,200 @@
+body {
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 360px;
+    margin-top: 20px;
+}
+
+.login-box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 35px 45px;
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+.login-btn {
+    width: 100%;
+    background: #0095f6;
+    border: none;
+    color: white;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.or-box {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.line {
+    height: 1px;
+    background: #dbdbdb;
+    flex: 1;
+}
+.or-box span {
+    margin: 0 15px;
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+}
+
+.fb-btn {
+    width: 100%;
+    border: none;
+    background: none;
+    color: #385185;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fb-btn img {
+    width: 20px;
+}
+
+.forgot {
+    display: block;
+    margin-top: 10px;
+    color: #00376b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-box {
+    border: 1px solid #dbdbdb;
+    background: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 12px;
+}
+.signup-box a {
+    color: #0095f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.store img {
+    width: 140px;
+    margin: 8px;
+}
+.get-app {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.google-play {
+    width: 160px;
+    height: auto;
+}
+
+.microsoft-badge {
+    width: 150px;
+    height: auto;
+
+}
+
+/* ===========================================================
+   FOOTER (Correct — 1st row same line, 2nd row next line, then language + ©)
+   =========================================================== */
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+    padding-bottom: 40px;
+    color: #737373;
+    font-size: 13px;
+}
+
+/* Row-1 (single line) */
+.footer-row.row-1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-bottom: 12px;
+}
+
+/* Row-2 */
+.footer-row.row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-bottom: 18px;
+}
+
+.footer-row a {
+    text-decoration: none;
+    color: #737373;
+}
+
+.footer-row a:hover {
+    text-decoration: underline;
+}
+
+/* Language + © */
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+footer select {
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    color: #737373;
+    cursor: pointer;
+}
+
+footer select option {
+    color: #000;
+}
+footer .copyright {
+    font-size: 13px;
+}
+
+
+
