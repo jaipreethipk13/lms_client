@@ -1,5 +1,72 @@
-.student{
-    font-family:'Times New Roman', Times, serif;
-    color: blue;
-    font-size: 100px;
+/* Full-screen background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("https://wallpapercave.com/wp/wp9021789.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Login box styling */
+.login-container {
+    width: 350px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Labels */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Input fields */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: darkred;
+}
+
+/* Signup/Login link */
+.login-container .link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-container .link a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.login-container .link a:hover {
+    text-decoration: underline;
 }
